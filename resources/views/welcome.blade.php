@@ -8,15 +8,13 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-        <!-- Styles -->
-        <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-        <!-- Scripts -->
-        <script src="{{ mix('js/app.js') }}" defer></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        @vite(['resources/css/app.css'])
     </head>
     <body>
-        <div id="root-component-1">
-            @{{message}}
-            <example-component-1></example-component-1>
+        <div id="app">
+            <app></app>
         </div>
+        @vite(['resources/js/app.js'])
     </body>
 </html>
